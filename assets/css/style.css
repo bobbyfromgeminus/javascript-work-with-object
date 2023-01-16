@@ -1,0 +1,82 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+body {
+    padding: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: rgb(152,158,176);
+    background: linear-gradient(135deg, rgba(152,158,176,1) 0%, rgba(85,89,108,1) 100%);
+}
+
+main {
+    width: 400px;
+    color: #a5abbe;
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+    background: rgb(84,85,105);
+    background: linear-gradient(135deg, rgba(84,85,105,1) 0%, rgba(40,41,52,1) 100%);
+}
+
+main h1 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight:  500;
+    padding-bottom: .5rem;
+}
+
+main nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+main nav button {
+    color: white;
+    font-size: .8rem;
+    font-weight:  500;
+    padding: .3rem .6rem;
+    background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+main nav button:nth-child(even) {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+
+main nav button:hover {
+    color: darkviolet;
+    background-color: white;
+}
+
+.container {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: .3rem;
+}
+
+.container h2 {
+    background-color: darkviolet;
+    color: white;
+    font-size: 1.2rem;
+    font-weight:  500;
+    padding: .2rem .5rem;
+    margin-bottom: .5rem;
+    border-radius: .3rem;
+}
+
+.container span {
+    color: white;
+}
