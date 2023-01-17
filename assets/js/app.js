@@ -50,16 +50,24 @@ const persons = [
 const header = document.querySelector('h1');
 const nav = document.querySelector('nav');
 const container = document.querySelector('div');
-let navContent = '';
+let navContent = `<table>`;
 
-persons.forEach( item => {
-    const button = document.createElement('button')
-    nav.appendChild(button);
-    button.textContent = `${item.lastName} ${item.firstName} adatai`;
-    button.addEventListener('click', () => showDates(item));
+persons.forEach( (item, index) => {
+    navContent += ` <tr>
+                        <td style="width: 70%">${item.lastName} ${item.firstName}</td>
+                        <td style="width: 30%"><button onclick="showDates(${index})">Mutasd!</button></td>
+                    </tr>`;
+    //const button = document.createElement('button')
+    //nav.appendChild(button);
+    //button.textContent = `${item.lastName} ${item.firstName} adatai`;
+    //button.addEventListener('click', () => showDates(item));
 })
 
-const showDates = (person) => {
+navContent += `</table>`;
+nav.innerHTML = navContent;
+
+const showDates = (index) => {
+    const person = persons[index];
     container.classList.add('container');
     container.innerHTML = ` <h2>${person.lastName} ${person.firstName}</h2>
                             életkor: <span>${person.age} év</span><br>
