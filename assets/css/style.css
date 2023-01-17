@@ -107,4 +107,14 @@ section {
     margin-top: 2rem;
 }
 
+section pre {
+    margin-top: 2rem;
+    font-family: monospace;
+    background-color: rgba(0, 0, 0, .75);
+    padding: 1rem 2em;
+    color:rgba(255, 255, 255, .9);
+    font-size: .7rem;
+    border-radius: .3rem;
+}
+
 section ul { padding-left: 3rem; }
